@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Smart_Delivery_Management_System04
 {
-    public class StandardShipment : Shipment
+    public class StandardShipment : Shipment, ITrackable
     {
         public StandardShipment(string tackingCode, string description, decimal weight, decimal deliveryFee, DeliveryAddress destination) : base(tackingCode, description, weight, deliveryFee, destination)
         {
@@ -12,6 +12,11 @@ namespace Smart_Delivery_Management_System04
         }
 
         public override decimal EstimatedCost { get;}
+
+        public  string  GetTrackingStatus()
+        {
+            return $"Shipment:{TrackingCode} is Ready";
+        }
 
         public override void PrintShipment()
         {
