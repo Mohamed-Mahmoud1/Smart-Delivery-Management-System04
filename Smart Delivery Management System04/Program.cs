@@ -45,6 +45,11 @@
             #region 5.Create IInsurable
             #endregion
 
+            #region 6.Create DeliveryReport
+            #endregion
+
+
+
             #endregion
         }
     }
