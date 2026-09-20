@@ -4,14 +4,19 @@ using System.Text;
 
 namespace Smart_Delivery_Management_System04
 {
-    public class StandardShipment : Shipment, ITrackable
+    public class StandardShipment : Shipment, ITrackable, IInsurable
     {
         public StandardShipment(string tackingCode, string description, decimal weight, decimal deliveryFee, DeliveryAddress destination) : base(tackingCode, description, weight, deliveryFee, destination)
         {
 
         }
 
-        public override decimal EstimatedCost { get;}
+        public override decimal EstimatedCost => DeliveryFee + (Weight * 5);
+
+        public decimal CalculateInsurance()
+        {
+            return 0.05m * EstimatedCost;
+        }
 
         public  string  GetTrackingStatus()
         {

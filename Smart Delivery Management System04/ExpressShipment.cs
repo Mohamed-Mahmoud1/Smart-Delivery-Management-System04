@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Smart_Delivery_Management_System04
 {
-    public class ExpressShipment : Shipment, ITrackable
+    public class ExpressShipment : Shipment, ITrackable, IInsurable
     {
         decimal _ExtraFee;
         public decimal ExtraFee
@@ -43,6 +43,11 @@ namespace Smart_Delivery_Management_System04
         public string GetTrackingStatus()
         {
             return $"Shipment:{TrackingCode} is Out for Delivery";
+        }
+
+        public decimal CalculateInsurance()
+        {
+            return 0.08m * EstimatedCost;
         }
     }
 }

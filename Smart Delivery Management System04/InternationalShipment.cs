@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Smart_Delivery_Management_System04
 {
-    public class InternationalShipment : Shipment, ITrackable
+    public class InternationalShipment : Shipment, ITrackable, IInsurable
     {
         string _DestinationCountry;
         decimal _CustomsFee;
@@ -65,6 +65,11 @@ namespace Smart_Delivery_Management_System04
         public string GetTrackingStatus()
         {
             return $"Shipment:{TrackingCode} has been Delivered";
+        }
+
+        public decimal CalculateInsurance()
+        {
+            return 0.12m * EstimatedCost;
         }
     }
 }

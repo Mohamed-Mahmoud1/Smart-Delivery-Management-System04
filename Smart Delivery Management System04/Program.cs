@@ -42,6 +42,8 @@
             #region 4.Create ITrackable
             #endregion
 
+            #region 5.Create IInsurable
+            #endregion
 
             #endregion
         }
