@@ -29,6 +29,18 @@
 
 
             #endregion
+
+
+            #region Part 02 — Practical
+
+            #region 1.Convert Shipment into an Abstract Class && 2.Create Abstract Members
+            #endregion
+
+
+
+
+
+            #endregion
         }
     }
 }
