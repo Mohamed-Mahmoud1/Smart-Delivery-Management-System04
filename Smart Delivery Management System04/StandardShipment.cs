@@ -15,6 +15,7 @@ namespace Smart_Delivery_Management_System04
 
         public decimal CalculateInsurance()
         {
+           
             return 0.05m * EstimatedCost;
         }
 
@@ -29,8 +30,6 @@ namespace Smart_Delivery_Management_System04
 
             Console.WriteLine($"Tracking Code: {TrackingCode}");
             Console.WriteLine($"Description: {Description}");
-            Console.WriteLine($"Weight: {Weight} KG");
-            Console.WriteLine($"Delivery Fee: {DeliveryFee} EGP ");
             Console.WriteLine($"Estimated Cost: {EstimatedCost} EGP");
             Console.WriteLine("-------------------------------------------------");
         }

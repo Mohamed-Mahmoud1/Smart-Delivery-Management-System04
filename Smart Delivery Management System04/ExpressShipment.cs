@@ -32,9 +32,6 @@ namespace Smart_Delivery_Management_System04
             Console.WriteLine("Express Shipment\n");
 
             Console.WriteLine($"Tracking Code: {TrackingCode}");
-            Console.WriteLine($"Description: {Description}");
-            Console.WriteLine($"Weight: {Weight} KG");
-            Console.WriteLine($"Delivery Fee: {DeliveryFee} EGP ");
             Console.WriteLine($"Extra Fee: {ExtraFee} EGP");
             Console.WriteLine($"Estimated Cost: {EstimatedCost} EGP");
             Console.WriteLine("-------------------------------------------------");

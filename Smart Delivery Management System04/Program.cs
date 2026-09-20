@@ -51,6 +51,29 @@
             #region 7.Update DeliveryCenter
             #endregion
 
+            #region 8.Main() Checklist
+
+            DeliveryAddress deliveryadders = new DeliveryAddress("Germany","",0);
+
+            StandardShipment standardshipment = new StandardShipment("SH001", "Laptop",3,80,deliveryadders);
+
+            ExpressShipment expressshipment = new ExpressShipment("SH002", "Mobile Phone", 2, 60, deliveryadders,30);
+
+            InternationalShipment internationalshipment = new InternationalShipment("SH003", "Television", 8, 120, deliveryadders, "Germany", 100);
+
+            DeliveryCenter deliveryCenter = new DeliveryCenter();
+            deliveryCenter.AddShipment(standardshipment);
+            deliveryCenter.AddShipment(expressshipment);
+            deliveryCenter.AddShipment(internationalshipment);
+
+            deliveryCenter.PrintAllShipments();
+
+            deliveryCenter.PrintTrackingStatuses();
+
+            deliveryCenter.PrintInsurance();
+
+
+            #endregion
 
             #endregion
         }

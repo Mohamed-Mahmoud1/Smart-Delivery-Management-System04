@@ -48,11 +48,7 @@ namespace Smart_Delivery_Management_System04
             Console.WriteLine("International Shipment\n");
 
             Console.WriteLine($"Tracking Code: {TrackingCode}");
-            Console.WriteLine($"Description: {Description}");
-            Console.WriteLine($"Weight: {Weight} KG");
-            Console.WriteLine($"Delivery Fee: {DeliveryFee} EGP ");
             Console.WriteLine($"Destination Countery: {DestinationCountry}");
-            Console.WriteLine($"Customs Fee: {CustomsFee}");
             Console.WriteLine($"Estimated Cost: {EstimatedCost} EGP");
             Console.WriteLine("-------------------------------------------------");
         }

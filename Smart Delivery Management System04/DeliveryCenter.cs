@@ -92,17 +92,23 @@ namespace Smart_Delivery_Management_System04
 
        public void PrintTrackingStatuses()
         {
-            foreach(ITrackable t in shipments)
+            Console.WriteLine("============================================");
+            Console.WriteLine("Tracking Status\n");
+            foreach (ITrackable t in shipments)
             {
-                t.GetTrackingStatus();
+                if (t == null) continue;
+                Console.WriteLine(t.GetTrackingStatus());
             }
         }
 
       public void PrintInsurance()
         {
-            foreach(IInsurable t in shipments)
+            Console.WriteLine("============================================");
+            Console.WriteLine("Insurance\n");
+            foreach (IInsurable t in shipments)
             {
-                t.CalculateInsurance();
+                if (t == null) continue;
+                Console.WriteLine($"{t.GetType().Name} Insurance:{t.CalculateInsurance()}");
             }
         }
     }
