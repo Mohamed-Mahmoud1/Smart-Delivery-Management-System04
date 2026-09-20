@@ -89,7 +89,7 @@ namespace Smart_Delivery_Management_System04
 
         public DeliveryAddress Destination { get; set; }
 
-        public abstract decimal EstimatedCost { get; set; }//abstract property
+        public abstract decimal EstimatedCost { get;}//abstract property
 
         public override string ToString()
         {
