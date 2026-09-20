@@ -16,6 +16,17 @@
             //Answer:Because it provides maintainability, hides complex details, and shows essential information only.
             #endregion
 
+            #region Question02
+            //a)  What is the difference between an Abstract Class and an Interface?
+            //Answer:An abstract class can have fields and constructors, whereas an interface cannot
+
+            //b)  When would you choose an Interface instead of an Abstract Class?
+            //Answer:When you want to support multiple inheritance of types.
+
+            //c)  Can a class inherit from multiple abstract classes? Can it implement multiple interfaces?
+            //Answer: class cannot inherit from multiple classes, but it can implement multiple interfaces.
+            #endregion
+
 
             #endregion
         }
